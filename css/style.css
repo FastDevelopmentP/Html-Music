@@ -1,0 +1,25 @@
+header {
+  background-color: mistyrose;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+body {
+  background-color: #d6ecff;
+}
+
+
+* {
+  font-family: sans-serif;
+}
+
+img {
+  width: 50%;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+}
