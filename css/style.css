@@ -75,3 +75,36 @@ img {
   background-color: mistyrose;
   text-align: center;
 }
+
+#zachtop_other_artists ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+#jerry_other_artists ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+#oliver_other_artists ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+#song_album_wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+#songs, #albums {
+  flex: 1;
+}
