@@ -1,3 +1,11 @@
+/* === Base === */
+* { font-family: sans-serif; }
+
+body {
+  background-color: #d6ecff; /* light blue */
+}
+
+/* === Element selectors from Page 2 === */
 header {
   background-color: mistyrose;
   text-align: center;
@@ -8,18 +16,62 @@ h3 {
   text-align: center;
 }
 
-body {
-  background-color: #d6ecff;
-}
-
-
-* {
-  font-family: sans-serif;
-}
-
+/* === Images === */
 img {
   width: 50%;
   border-radius: 8px;
   display: block;
   margin: auto;
+}
+
+/* === Classes demo (Page 2 examples) === */
+.green { color: green; }
+.blue  { color: blue; }
+.red   { color: red; }
+
+/* Single element by ID demo */
+#big { font-size: 40px; }
+
+/* Subheader class for list headings */
+.subheader {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Button paragraph (you already use class="button") */
+.button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  margin: 10px;
+}
+.button a { color: white; text-decoration: none; }
+
+/* === Page-specific IDs to mirror the assignment’s #songs / #albums === */
+/* Your IDs: *_songs and *_albums */
+#zachtop_songs, #jerry_songs, #oliver_songs {
+  width: 50%;
+  background-color: lightblue;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px auto; /* centers the box */
+}
+
+#zachtop_albums, #jerry_albums, #oliver_albums {
+  width: 50%;
+  background-color: lightyellow;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+/* === Step 4 idea (id-specific header) applied to your main page id === */
+/* If you want to demonstrate swapping from element to ID selector: */
+#zachtop_header {
+  background-color: mistyrose;
+  text-align: center;
 }
