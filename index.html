@@ -1,55 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head id="index_head">
-    <title>My Music Page</title> 
-    <link rel="stylesheet" href="./css/style.css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Music Page</title>
+
+  <!-- Bootstrap 5.3.8 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+
+  <!-- Your custom styles (loads after Bootstrap so you can override) -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+
+  <!-- Optional: tiny blank favicon to silence 404 -->
+  <link rel="icon" href="data:,">
 </head>
+
 <body id="index_body">
-  <header id="zachtop_header">
-    <h1>Welcome to the Home page for Pete's Best Music on Spotify</h1>
-    <h3>My most listened to artist lately has been Zach Top</h3>
-  </header>
+  <div class="container mt-4">
+    <header id="zachtop_header" class="text-center mb-4">
+      <h1 class="display-5 p-3 bg-light rounded">
+        Welcome to the Home page for Pete's Best Music on Spotify
+      </h1>
+      <p class="lead">My most listened to artist lately has been Zach Top.</p>
+    </header>
 
-  <main id="zachtop_main">
-    <article id="zachtop_article">
-      <img 
+    <main id="zachtop_main">
+      <article id="zachtop_article">
+        <img
           src="./img/ZachTop.jpg"
-          alt="An image of Zach Top performing live."
-          width="50%">
-      
-      <section id="zachtop_other_artists">
-        <h4>See my other favorite artists!</h4>
-        <ul>
-          <li><a href="./Jerry.html">Jerry Reed</a></li>
-          <li><a href="./Oliver.html">Oliver Anthony</a></li>
-        </ul>
-      </section>
+          alt="Zach Top performing live."
+          class="img-fluid rounded shadow d-block mx-auto mb-3"
+        >
 
-      <div id="song_album_wrapper">
-        <section id="zachtop_songs">
-        <p>My favorite songs from Zach Top are:</p>
-        <ul>
-            <li>I Never Lie</li>
-            <li>Chattahoochee</li>
-            <li>Bad Luck</li>
-        </ul>
+        <section id="zachtop_other_artists" class="text-center mb-3">
+          <h4 class="mb-2">See my other favorite artists!</h4>
+          <nav class="d-flex justify-content-center gap-3">
+            <a class="btn btn-outline-primary" href="./Jerry.html">Jerry Reed</a>
+            <a class="btn btn-outline-primary" href="./Oliver.html">Oliver Anthony</a>
+          </nav>
         </section>
-      
 
-        <section id="zachtop_albums">
-        <p>Here are his best albums:</p>
-        <ol>
-            <li>Top Shelf</li>
-            <li>Come and Go</li>
-            <li>In My Head</li>
-        </ol>
-        </section>
-      </div>
+        <div id="song_album_wrapper" class="row g-3">
+          <section id="zachtop_songs" class="col-md-6 mb-4">
+            <h3>Favorite Songs</h3>
+            <ul>
+              <li>I Never Lie</li>
+              <li>Chattahoochee</li>
+              <li>Bad Luck</li>
+            </ul>
+          </section>
 
-      <footer id="zachtop_footer">
-        <p class="button">Learn more about <a href="https://zachtopcoldbeerandcountrymusic.com/">Zach Top</a> here!</p> 
-      </footer>
-    </article>
-  </main>
+          <section id="zachtop_albums" class="col-md-6 mb-4">
+            <h3>Best Albums</h3>
+            <ol>
+              <li>Top Shelf</li>
+              <li>Come and Go</li>
+              <li>In My Head</li>
+            </ol>
+          </section>
+        </div>
+
+        <!-- External CTA -->
+        <p class="text-center my-4">
+          <a href="https://zachtopcoldbeerandcountrymusic.com/" class="btn btn-primary">
+            Learn more about Zach Top
+          </a>
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer nav (internal links) -->
+    <footer class="mt-5">
+      <nav class="d-flex justify-content-center gap-4">
+        <a href="./Jerry.html" class="btn btn-success">Jerry Reed</a>
+        <a href="./Oliver.html" class="btn btn-success">Oliver Anthony</a>
+      </nav>
+    </footer>
+  </div>
 </body>
+
+
+
 </html>

@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head id="jerry_head">
-    <title>My Music Page</title> 
-    <link rel="stylesheet" href="./css/style.css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Music Page</title>
+
+  <!-- Bootstrap 5.3.8 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+
+  <!-- Your custom styles (loads after Bootstrap so you can override) -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+
+  <!-- Optional: tiny blank favicon to silence 404 -->
+  <link rel="icon" href="data:,">
 </head>
+
 <body id="jerry_body">
-  <header id="jerry_header">
-    <h1>Pete's Best Music on Spotify Page 2</h1>
-    <h3>My second most listened to artist lately has been Jerry Reed</h3>
-  </header>
+  <div class="container mt-4">
+    <header id="jerry_header" class="text-center mb-4">
+      <h1 class="display-5 p-3 bg-light rounded">Pete's Best Music on Spotify — Page 2</h1>
+      <p class="lead">My second most listened to artist lately has been Jerry Reed.</p>
+    </header>
 
-  <main id="jerry_main">
-    <article id="jerry_article">
-      <img 
+    <main id="jerry_main">
+      <article id="jerry_article">
+        <img
           src="./img/JerryReed.jpg"
-          alt="Jerry Reed standing looking off in the distance."
-          width="50%">
+          alt="Jerry Reed standing and looking into the distance."
+          class="img-fluid w-50 d-block mx-auto rounded shadow mb-3"
+        >
 
-      <section id="jerry_other_artists">
-        <h4>See my other favorite artists!</h4>
-        <p>Go <a href="index.html">Home</a></p>
-        <ul>
-          <li><a href="./index.html">Zach Top</a></li>
-          <li><a href="./Oliver.html">Oliver Anthony</a></li>
-        </ul>
-      </section>
-
-      <div id="song_album_wrapper">
-        <section id="jerry_songs">
-        <p>My favorite songs by Jerry Reed are:</p>
-        <ul>
-            <li>Amos Moses</li>
-            <li>East Bound and Down</li>
-            <li>She Got the Goldmine</li>
-        </ul>
+        <section id="jerry_other_artists" class="text-center mb-3">
+          <h4>See my other favorite artists!</h4>
+          <nav class="d-flex justify-content-center gap-3">
+            <a class="btn btn-outline-primary" href="./index.html">Zach Top (Home)</a>
+            <a class="btn btn-outline-primary" href="./Oliver.html">Oliver Anthony</a>
+          </nav>
         </section>
 
-        <section id="jerry_albums">
-        <p>Here are his best albums:</p>
-        <ol>
-            <li>East Bound and Down</li>
-            <li>Super Hits 1997 Spotify</li>
-            <li>The Essential Jerry Reed 2015 Spotify</li>
-        </ol>
-        </section>
-      </div>
+        <div id="song_album_wrapper" class="row g-3">
+          <section id="jerry_songs" class="col-md-6 mb-4">
+            <h3>Favorite Songs</h3>
+            <ul>
+              <li>Amos Moses</li>
+              <li>East Bound and Down</li>
+              <li>She Got the Goldmine</li>
+            </ul>
+          </section>
 
-      <footer id="jerry_footer">
-        <p class="button">Learn more about <a href="https://en.wikipedia.org/wiki/Jerry_Reed">Jerry Reed</a> here!</p> 
-      </footer>
-    </article>
-  </main>
+          <section id="jerry_albums" class="col-md-6 mb-4">
+            <h3>Best Albums</h3>
+            <ol>
+              <li>East Bound and Down</li>
+              <li>Super Hits (1997) — Spotify</li>
+              <li>The Essential Jerry Reed (2015) — Spotify</li>
+            </ol>
+          </section>
+        </div>
+
+        <!-- External CTA -->
+        <p class="text-center my-4">
+          <a href="https://en.wikipedia.org/wiki/Jerry_Reed" class="btn btn-primary">
+            Learn more about Jerry Reed
+          </a>
+        </p>
+      </article>
+    </main>
+
+    <!-- Footer nav (internal links) -->
+    <footer class="mt-5">
+      <nav class="d-flex justify-content-center gap-4">
+        <a href="./index.html" class="btn btn-success">Zach Top (Home)</a>
+        <a href="./Oliver.html" class="btn btn-success">Oliver Anthony</a>
+      </nav>
+    </footer>
+  </div>
 </body>
+
 </html>
